@@ -6,7 +6,7 @@ const {merge} = require("webpack-merge")
 const commonConfig = require('./webpack.common')
 
 const serverConfig = {
-  target: 'node',   //不打包node自带模块
+  target: 'node',   //不打包node内置模块
   mode: 'development',
   entry: './src/server/index.js',
   output: {
